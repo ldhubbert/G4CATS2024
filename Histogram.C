@@ -23,8 +23,8 @@ void Histogram()
 	//1000*GeV = value in MeV	
 	while (r1.Next()) 
 	{
-		//h1->Fill((*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6)*(1000));
-		h1->Fill(*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6);
+		h1->Fill((*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6)*(1000));
+		//h1->Fill(*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6);
 	}
 	
 	h1->GetXaxis()->SetTitle("Energy (MeV)");

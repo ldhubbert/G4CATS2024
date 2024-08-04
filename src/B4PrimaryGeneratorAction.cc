@@ -103,16 +103,16 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   fParticleGun->SetParticlePosition(position);
 
   //Particle Momentum Direction
-  momentum_in_x_direction[counter] = n->GetArgs()[8];
-  momentum_in_y_direction[counter] = n->GetArgs()[9];
-  momentum_in_z_direction[counter] = n->GetArgs()[10];
+  momentum_in_x_direction[counter] = n->GetArgs()[13];
+  momentum_in_y_direction[counter] = n->GetArgs()[14];
+  momentum_in_z_direction[counter] = n->GetArgs()[15];
 
   G4ThreeVector momentum_direction(momentum_in_x_direction[counter], momentum_in_y_direction[counter], momentum_in_z_direction[counter]);
   //std::cout << "Particle Momentum Direction: " << momentum_direction << std::endl;
   fParticleGun->SetParticleMomentumDirection(momentum_direction);
 
   //Particle Energy
-  Float_t energy = n->GetArgs()[12];
+  Float_t energy = n->GetArgs()[17];
   //std::cout << "Particle Energy: " << energy <<std::endl;
   fParticleGun->SetParticleEnergy(energy);
 

@@ -18,7 +18,7 @@
 #include "TFile.h"
 #include "TNtuple.h"
 
-TFile *f = new TFile("~/EvGen/out/basic/g_300_0_0_in.root");
+TFile *f = new TFile("~/EvGen/out/10cm/compton_c_300_in.root");
 TNtuple *n = (TNtuple*)f->Get("h1");
 const Int_t number_of_events = n->GetEntries();
 
